@@ -48,6 +48,7 @@ jobs:
           pytest --junitxml=report.xml
 
       - name: Upload relatório de testes
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-report
@@ -60,4 +61,4 @@ jobs:
 
     steps:
       - name: Deploy (simulado)
-        run: echo "Deploy realizado com sucesso 🚀"
+        run: echo "Deploy realizado com sucesso"
