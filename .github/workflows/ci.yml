@@ -45,7 +45,7 @@ jobs:
 
       - name: Rodar testes
         run: |
-          pytest --junitxml=report.xml
+          PYTHONPATH=. pytest --junitxml=report.xml
 
       - name: Upload relatório de testes
         if: always()
