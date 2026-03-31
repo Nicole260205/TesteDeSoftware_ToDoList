@@ -12,7 +12,7 @@ def test_remove_task():
     assert "Tarefa" not in todo.get_tasks()
 
 
-def test_fail(): # o erro está aqui
-    todo = TodoList()
-    todo.add_task("Erro")
-    assert "Outra coisa" in todo.get_tasks()
+#def test_fail():
+#    todo = TodoList()
+#    todo.add_task("Erro")
+#    assert "Outra coisa" in todo.get_tasks()
